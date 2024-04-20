@@ -77,11 +77,10 @@ The Personalized Recipe Recommendation System is a web application built using N
 ### Installation
 
 1. Clone the repository:
+
    ```bash
    git clone https://github.com/meetamjadsaeed/Recipe-Recommendation-System.git
    ```
-
-````
 
 2. Install dependencies:
    ```bash
@@ -99,7 +98,7 @@ The Personalized Recipe Recommendation System is a web application built using N
 
 ```bash
 $ npm install
-````
+```
 
 ## Running the app
 
