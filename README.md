@@ -26,11 +26,84 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
+````markdown
+# Personalized Recipe Recommendation System
+
+## Overview
+
+The Personalized Recipe Recommendation System is a web application built using NestJS, MongoDB, and Typeform. It provides users with personalized recipe recommendations based on their dietary preferences, cooking habits, and ingredient availability. The system utilizes microservices architecture for scalability and integrates modern concepts like caching and machine learning for enhanced performance and user experience.
+
+## Features
+
+- **User Management:** Allows users to create accounts, manage profiles, and update dietary preferences.
+- **Recipe Management:** Provides functionalities to add, edit, and delete recipes from the system.
+- **Personalized Recommendations:** Generates recipe recommendations tailored to each user's preferences and historical interactions.
+- **Ingredient Availability:** Integrates with external APIs to fetch real-time ingredient availability and prices.
+- **Caching Mechanisms:** Implements caching to store frequently accessed data for faster retrieval and improved performance.
+- **Scalable Architecture:** Utilizes microservices architecture for independent scaling of components based on demand.
+- **Feedback Mechanisms:** Collects user ratings and feedback to continuously improve the recommendation algorithms.
+
+## Modules
+
+1. **User Module**
+   - **Description:** Manages user profiles, authentication, and preferences.
+   - **Endpoints:**
+     - `POST /users`: Create a new user profile.
+     - `PUT /users/:id/preferences`: Update user preferences.
+2. **Recipe Module**
+   - **Description:** Handles recipe management functionalities such as adding, editing, and deleting recipes.
+   - **Endpoints:**
+     - `GET /recipes`: Retrieve all recipes.
+     - `POST /recipes`: Add a new recipe to the system.
+3. **Recommendation Module**
+   - **Description:** Generates personalized recipe recommendations for users based on their preferences.
+   - **Endpoints:**
+     - `GET /recommendations/:userId`: Get personalized recipe recommendations for a specific user.
+4. **Ingredient Module**
+   - **Description:** Integrates with external APIs to fetch ingredient availability and prices.
+   - **Endpoints:**
+     - `GET /ingredients`: Fetch available ingredients from external sources.
+5. **Cache Module**
+   - **Description:** Implements caching mechanisms to store frequently accessed data.
+   - **Functionality:** Utilizes caching strategies like LRU (Least Recently Used) or TTL (Time-to-Live) for optimal performance.
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js and npm installed on your machine.
+- MongoDB installed and running locally or on a cloud provider.
+- Typeform account for user data collection.
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/meetamjadsaeed/Recipe-Recommendation-System.git
+   ```
+````
+
+2. Install dependencies:
+   ```bash
+   cd recipe-recommendation-system
+   npm install
+   ```
+3. Set up environment variables:
+   Create a `.env` file in the root directory and specify the following variables:
+   ```env
+   MONGODB_URI=your_mongodb_connection_string
+   TYPEFORM_API_KEY=your_typeform_api_key
+   ```
+
+````
+
+
+
 ## Installation
 
 ```bash
 $ npm install
-```
+````
 
 ## Running the app
 
