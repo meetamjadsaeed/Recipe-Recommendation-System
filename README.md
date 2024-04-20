@@ -26,7 +26,6 @@
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
 
-````markdown
 # Personalized Recipe Recommendation System
 
 ## Overview
@@ -81,6 +80,7 @@ The Personalized Recipe Recommendation System is a web application built using N
    ```bash
    git clone https://github.com/meetamjadsaeed/Recipe-Recommendation-System.git
    ```
+
 ````
 
 2. Install dependencies:
@@ -94,10 +94,6 @@ The Personalized Recipe Recommendation System is a web application built using N
    MONGODB_URI=your_mongodb_connection_string
    TYPEFORM_API_KEY=your_typeform_api_key
    ```
-
-````
-
-
 
 ## Installation
 
